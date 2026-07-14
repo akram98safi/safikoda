@@ -32,7 +32,7 @@ This website is a highly customized, bilingual, dynamic web application designed
 ## 📂 Project Structure
 
 ```text
-├── akram-portfolio-final.html    # The main bilingual portfolio code (Single-file build)
+├── index.html                    # The main bilingual portfolio code (Single-file build)
 ├── README.md                     # Project documentation
 └── .git                          # Git configuration directory
 ```
@@ -63,7 +63,7 @@ Since this is a standalone static web application, running it is extremely simpl
     ```bash
     cd safikoda
     ```
-3.  Double-click or open `akram-portfolio-final.html` in any web browser of your choice (Chrome, Firefox, Safari, Edge).
+3.  Double-click or open `index.html` in any web browser of your choice (Chrome, Firefox, Safari, Edge).
 
 ---
 
