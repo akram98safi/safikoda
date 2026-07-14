@@ -286,7 +286,7 @@ html[dir="rtl"] .sup-link:hover{transform:translateX(-4px)}
 .coin{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:800;flex:none;color:#0b1020}
 .coin.btc{background:#f7931a}.coin.eth{background:#8ca6f0}.coin.usdt{background:#26a17b;color:#fff}
 .addr-line{display:flex;gap:9px;align-items:center}
-.addr{flex:1;min-width:0;font-family:Menlo,Consolas,monospace;font-size:12px;color:var(--muted);background:#0009;border:1px solid var(--border);border-radius:8px;padding:9px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
+.addr{display:block;flex:1 1 0%;min-width:0;font-family:Menlo,Consolas,monospace;font-size:12px;color:var(--muted);background:#0009;border:1px solid var(--border);border-radius:8px;padding:9px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
 .copy-btn{display:inline-flex;align-items:center;justify-content:center;width:105px;background:#5eb0ff1c;border:1px solid #5eb0ff55;color:#9cd0ff;border-radius:8px;padding:9px 10px;font-size:12.5px;font-weight:600;cursor:pointer;transition:.25s;min-height:38px;flex:none}
 .copy-btn:hover{background:#5eb0ff33;transform:scale(1.02)}
 .copy-btn:active{transform:scale(0.98)}
@@ -414,6 +414,10 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
   .proj-grid,.contact-grid,.bars{grid-template-columns:1fr}
   #support .panel{padding:26px 20px}
   .wrap{padding:0 18px}
+  .addr-line{gap:8px}
+  .addr{padding:9px 8px;font-size:11px}
+  .copy-btn{width:88px;padding:9px 6px;font-size:11.5px}
+  html.light .copy-btn{background:rgba(37,99,235,.08)}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
