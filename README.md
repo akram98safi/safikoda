@@ -1,6 +1,6 @@
 # Safikoda — IT & Full-Stack Portfolio
 
-Welcome to the official repository for **Safikoda**, the professional portfolio of **Akram S. Safi**, a specialist in IT Support, Network Technician, and Full-Stack Web Developer based in Gaza, Palestine.
+Welcome to the official repository for **Safikoda**, the professional portfolio of **Eng. Akram S. Safi**, a specialist in IT Support, Network Technician, and Full-Stack Web Developer based in Gaza, Palestine.
 
 This website is a highly customized, bilingual, dynamic web application designed to showcase Akram's skills, professional experience, projects, and contact channels. It features an interactive, modern user interface with state-of-the-art styling and micro-interactions.
 
