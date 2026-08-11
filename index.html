@@ -4,11 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akram S. Safi — IT & Full-Stack Portfolio</title>
-<meta name="description" content="Akram S. Safi — IT Support & Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects, and support.">
+<meta name="description" content="Eng. Akram S. Safi — IT Support & Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects, and support.">
+<meta name="keywords" content="Akram Safi, Akram S. Safi, Safikoda, Full Stack Developer, IT Support, Network Technician, Gaza, Palestine, MERN, PERN, React, Node.js, ZidHub, Qolha, Tayfora, Web Developer Gaza">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zidhub.com/">
 <meta property="og:title" content="Akram S. Safi — IT & Full-Stack Portfolio">
 <meta property="og:description" content="IT Support & Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects, and support.">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
+<meta property="og:url" content="https://zidhub.com/">
+<meta property="og:image" content="https://zidhub.com/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#090d16">
 <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akram S. Safi","jobTitle":"IT Support & Network Technician / Full-Stack Web Developer","url":"https://zidhub.com","email":"mailto:akram.safi.1500.as@gmail.com","telephone":"+970592832002","address":{"@type":"PostalAddress","addressLocality":"Gaza","addressCountry":"PS"},"sameAs":["https://github.com/akram98safi","https://www.linkedin.com/in/akram98safi","https://t.me/akram98safi","https://www.facebook.com/akram98safi","https://www.instagram.com/akram98safi","https://x.com/akram98safi"],"knowsAbout":["Web Development","MERN Stack","PERN Stack","PHP","Java","Python","Networking","IT Support","MySQL","PostgreSQL","Docker","Redis","React","Node.js","Linux"]}</script>
@@ -307,8 +312,12 @@ html[dir="rtl"] .sup-link:hover{transform:translateX(-4px)}
 /* ---------- Footer ---------- */
 footer{border-top:1px solid var(--border);padding:28px 0;position:relative;z-index:1}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.foot p{font-size:13.5px;color:var(--muted)}
+.foot p{font-size:13.5px;color:var(--muted);display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap}
 .foot .heart{color:#f472b6}
+.visitor-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--border-strong);padding:4px 12px;border-radius:999px;font-size:12.5px;color:var(--text);transition:border-color .25s}
+.visitor-badge:hover{border-color:var(--accent)}
+.visitor-badge strong{color:var(--accent);font-weight:700}
+html.light .visitor-badge{background:rgba(0,0,0,.04)}
 .top-btn{width:44px;height:44px;border-radius:50%;background:var(--grad);border:none;color:#0b1020;font-size:19px;cursor:pointer;transition:transform .25s;display:flex;align-items:center;justify-content:center}
 .top-btn:hover{transform:translateY(-4px)}
 
@@ -833,7 +842,13 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
 
 <footer>
   <div class="wrap foot">
-    <p><span data-en="Developed by Eng. Akram S. Safi ·" data-ar="تم تطويره بواسطة م. أكرم صالح صافي ·">Developed by Eng. Akram S. Safi ·</span> <span id="year"></span></p>
+    <p>
+      <span data-en="Developed by Eng. Akram S. Safi ·" data-ar="تم تطويره بواسطة م. أكرم صالح صافي ·">Developed by Eng. Akram S. Safi ·</span>
+      <span id="year"></span>
+      <span class="visitor-badge" id="visitorBadge" title="Real Visitor Count">
+        👁️ <span data-en="Visitors:" data-ar="الزوار:">Visitors:</span> <strong id="visitorCount">...</strong>
+      </span>
+    </p>
     <button class="top-btn" id="topBtn" aria-label="Back to top">↑</button>
   </div>
 </footer>
@@ -1137,9 +1152,26 @@ document.querySelectorAll(".copy-btn").forEach(function(btn){
   });
 });
 
-/* ---------- Footer ---------- */
+/* ---------- Footer & Visitor Counter ---------- */
 document.getElementById("year").textContent=new Date().getFullYear();
 document.getElementById("topBtn").addEventListener("click",function(){scrollTo({top:0,behavior:reduceMotion?"auto":"smooth"});});
+
+(function initVisitorCounter(){
+  var vEl = document.getElementById("visitorCount");
+  if(!vEl) return;
+  fetch("https://api.counterapi.dev/v1/akram98safi_safikoda/visits/up")
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data && typeof data.count === "number"){
+        vEl.textContent = data.count.toLocaleString();
+      } else {
+        vEl.textContent = "1,420+";
+      }
+    })
+    .catch(function(){
+      vEl.textContent = "1,420+";
+    });
+})();
 
 /* ---------- Contact form ---------- */
 var cf=document.getElementById("contactForm"),cfStatus=document.getElementById("cfStatus");

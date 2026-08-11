@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zidhub.com/sitemap.xml
