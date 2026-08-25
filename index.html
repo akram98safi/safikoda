@@ -7,16 +7,25 @@
 <meta name="description" content="Eng. Akram S. Safi — IT Support & Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects, and support.">
 <meta name="keywords" content="Akram Safi, Akram S. Safi, Safikoda, Full Stack Developer, IT Support, Network Technician, Gaza, Palestine, MERN, PERN, React, Node.js, ZidHub, Qolha, Tayfora, Web Developer Gaza">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://zidhub.com/">
+<link rel="canonical" href="https://akram98safi.github.io/safikoda/">
 <meta property="og:title" content="Akram S. Safi — IT & Full-Stack Portfolio">
 <meta property="og:description" content="IT Support & Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects, and support.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://zidhub.com/">
-<meta property="og:image" content="https://zidhub.com/favicon.png">
+<meta property="og:url" content="https://akram98safi.github.io/safikoda/">
+<meta property="og:image" content="https://akram98safi.github.io/safikoda/favicon.png">
+<meta property="og:image:alt" content="Akram S. Safi — IT &amp; Full-Stack Portfolio">
+<meta property="og:site_name" content="Safikoda — Akram S. Safi">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_PS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#090d16">
+<meta name="twitter:title" content="Akram S. Safi — IT &amp; Full-Stack Portfolio">
+<meta name="twitter:description" content="IT Support &amp; Network Technician and Full-Stack Web Developer (MERN/PERN, PHP, Java, Python). Portfolio, live projects and support.">
+<meta name="twitter:image" content="https://akram98safi.github.io/safikoda/favicon.png">
+<meta name="author" content="Akram S. Safi">
+<meta name="theme-color" content="#090d16" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/png" href="favicon.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akram S. Safi","jobTitle":"IT Support & Network Technician / Full-Stack Web Developer","url":"https://zidhub.com","email":"mailto:akram.safi.1500.as@gmail.com","telephone":"+970592832002","address":{"@type":"PostalAddress","addressLocality":"Gaza","addressCountry":"PS"},"sameAs":["https://github.com/akram98safi","https://www.linkedin.com/in/akram98safi","https://t.me/akram98safi","https://www.facebook.com/akram98safi","https://www.instagram.com/akram98safi","https://x.com/akram98safi"],"knowsAbout":["Web Development","MERN Stack","PERN Stack","PHP","Java","Python","Networking","IT Support","MySQL","PostgreSQL","Docker","Redis","React","Node.js","Linux"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akram S. Safi","jobTitle":"IT Support & Network Technician / Full-Stack Web Developer","url":"https://akram98safi.github.io/safikoda/","email":"mailto:akram.safi.1500.as@gmail.com","telephone":"+970592832002","address":{"@type":"PostalAddress","addressLocality":"Gaza","addressCountry":"PS"},"sameAs":["https://github.com/akram98safi","https://www.linkedin.com/in/akram98safi","https://t.me/akram98safi","https://www.facebook.com/akram98safi","https://www.instagram.com/akram98safi","https://x.com/akram98safi"],"knowsAbout":["Web Development","MERN Stack","PERN Stack","PHP","Java","Python","Networking","IT Support","MySQL","PostgreSQL","Docker","Redis","React","Node.js","Linux"]}</script>
 <style>
 :root{
   --bg:#090d16;
@@ -72,7 +81,6 @@ button{font-family:inherit}
 .boot-bar>i{display:block;height:100%;width:0;background:var(--grad);border-radius:inherit;transition:width .2s linear;box-shadow:0 0 16px rgba(94,176,255,.45)}
 .intro-skip{position:absolute;bottom:12vh;left:50%;transform:translateX(-50%);z-index:5;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.25);color:#9aa4b5;font-size:11px;letter-spacing:2px;padding:8px 20px;border-radius:999px;cursor:pointer;backdrop-filter:blur(6px)}
 .intro-skip:hover{color:#fff;border-color:rgba(94,176,255,.55)}
-#introSnd,#unmuteOverlay{display:none!important}
 @media (prefers-reduced-motion:reduce){.boot-glow{animation:none}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
 
@@ -447,9 +455,25 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
 }
+
+/* ---------- Accessibility & legibility polish ---------- */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.skip-link{position:absolute;inset-inline-start:-9999px;top:10px;z-index:300;background:var(--card);color:var(--text);border:1px solid var(--border-strong);padding:10px 16px;border-radius:10px;font-weight:700;font-size:14px}
+.skip-link:focus{inset-inline-start:14px}
+.hp{position:absolute!important;inset-inline-start:-9999px!important;width:1px;height:1px;overflow:hidden}
+.bar-item .row .lvl{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.02em}
+.proj-meta{margin-top:8px;font-size:13px;line-height:1.55;color:var(--muted)}
+.chip{font-size:13px}
+.sup-note{font-size:13px}
+.cp-range{font-size:12px}
+.cat-tag,.live-badge{font-size:11.5px}
+.faq-item.open .faq-a{max-height:520px}
+.form-btn[disabled]{opacity:.65;cursor:not-allowed}
+@media (max-width:520px){.hero-cta .btn{width:100%;text-align:center;justify-content:center}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main" data-en="Skip to content" data-ar="تخطي إلى المحتوى">Skip to content</a>
 
 <div id="preloader">
   <div class="bar-cine t"></div><div class="bar-cine b"></div>
@@ -463,9 +487,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
     <div class="boot-tag" id="bootTag">IT · Networks · Full-Stack</div>
     <div class="boot-bar" aria-hidden="true"><i id="bootBar"></i></div>
   </div>
-  <button class="intro-skip" id="introSkip" data-en="SKIP" data-ar="تخطي">SKIP</button>
-  <button class="intro-skip" id="introSnd" data-en="SOUND" data-ar="صوت" style="display:none">SOUND</button>
-  <div id="unmuteOverlay" aria-hidden="true"></div>
+  <button class="intro-skip" id="introSkip" type="button" data-en="Skip intro" data-ar="تخطي المقدمة">Skip intro</button>
 </div>
 
 <canvas id="bg-canvas" aria-hidden="true"></canvas>
@@ -480,13 +502,13 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
     <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
     <li><a href="#experience" data-en="Experience" data-ar="الخبرات">Experience</a></li>
     <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-    <li><a href="#support" data-en="Support" data-ar="ادعمني">Support</a></li>
     <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+    <li><a href="#support" data-en="Support" data-ar="ادعمني">Support</a></li>
   </ul>
   <div class="nav-actions">
     <button id="themeToggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Light / Dark mode">🌙</button>
     <button class="lang-btn" id="langToggle" aria-label="Switch language">عربي</button>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <nav class="mobile-menu" id="mobileMenu">
@@ -494,11 +516,11 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
   <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
   <a href="#experience" data-en="Experience" data-ar="الخبرات">Experience</a>
   <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
-  <a href="#support" data-en="Support" data-ar="ادعمني">Support</a>
   <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  <a href="#support" data-en="Support" data-ar="ادعمني">Support</a>
 </nav>
 
-<main>
+<main id="main">
 <!-- ================= HERO ================= -->
 <section id="hero">
   <div class="wrap">
@@ -506,16 +528,16 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
     <p class="hero-hello" data-en="Hello, I am" data-ar="مرحباً، أنا">Hello, I am</p>
     <h1 class="hero-name"><span data-en="Akram S." data-ar="أكرم صالح">Akram S.</span> <span class="grad" data-en="Safi" data-ar="صافي">Safi</span></h1>
     <div class="typing-line"><span id="typed"></span><span class="caret" aria-hidden="true"></span></div>
-    <p class="hero-sub" data-en="IT professional & developer from Gaza, Palestine — blending 6+ years of hands-on networking and technical support with modern full-stack web development (MERN / PERN, PHP, Java, Python)." data-ar="متخصص تكنولوجيا معلومات ومطوّر من غزة، فلسطين — أجمع بين أكثر من 6 سنوات خبرة عملية في الشبكات والدعم الفني وبين تطوير الويب الحديث (MERN / PERN، PHP، Java، Python).">IT professional & developer from Gaza, Palestine — blending 6+ years of hands-on networking and technical support with modern full-stack web development (MERN / PERN, PHP, Java, Python).</p>
+    <p class="hero-sub" data-en="IT &amp; networks professional turned full-stack web developer — 6+ years of hands-on support, now shipping bilingual (AR/EN) web apps end to end." data-ar="متخصص شبكات ودعم فني تحوّل إلى مطوّر ويب متكامل — أكثر من 6 سنوات خبرة عملية، وأبني الآن تطبيقات ويب ثنائية اللغة من الفكرة حتى النشر.">IT &amp; networks professional turned full-stack web developer — 6+ years of hands-on support, now shipping bilingual (AR/EN) web apps end to end.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary" data-en="View My Work" data-ar="شاهد أعمالي">View My Work</a>
       <a href="Akram_Safi_CV.pdf" class="btn btn-ghost" download data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</a>
-      <a href="#support" class="btn btn-love"><span aria-hidden="true">❤</span> <span data-en="Support Me" data-ar="ادعمني">Support Me</span></a>
+      <a href="#contact" class="btn btn-love"><span aria-hidden="true">✦</span> <span data-en="Hire Me" data-ar="اعمل معي">Hire Me</span></a>
     </div>
     <div class="hero-stats">
-      <div class="stat reveal"><b class="count" data-target="6">0</b><span data-en="Years in IT" data-ar="سنوات في التقنية">Years in IT</span></div>
-      <div class="stat reveal d1"><b class="count" data-target="12">0</b><span data-en="Technologies" data-ar="تقنية أتقنها">Technologies</span></div>
-      <div class="stat reveal d2"><b class="count" data-target="3">0</b><span data-en="Projects" data-ar="مشاريع">Projects</span></div>
+      <div class="stat reveal"><b class="count" data-target="6">6</b><span data-en="Years in IT" data-ar="سنوات في التقنية">Years in IT</span></div>
+      <div class="stat reveal d1"><b class="count" data-target="12">12</b><span data-en="Technologies" data-ar="تقنية أتقنها">Technologies</span></div>
+      <div class="stat reveal d2"><b class="count" data-target="3">3</b><span data-en="Projects" data-ar="مشاريع">Projects</span></div>
       <div class="stat reveal d3"><b>AR/EN</b><span data-en="Bilingual" data-ar="ثنائي اللغة">Bilingual</span></div>
     </div>
   </div>
@@ -576,10 +598,10 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
       </div>
     </div>
     <div class="bars">
-      <div class="bar-item reveal"><div class="row"><b data-en="Networks & Hardware" data-ar="الشبكات والهاردوير">Networks & Hardware</b><span>95%</span></div><div class="bar"><i data-w="95"></i></div></div>
-      <div class="bar-item reveal d1"><div class="row"><b>MERN / PERN</b><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
-      <div class="bar-item reveal d2"><div class="row"><b>PHP · HTML · CSS</b><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
-      <div class="bar-item reveal d3"><div class="row"><b>Java · JavaFX · Python</b><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+      <div class="bar-item reveal"><div class="row"><b data-en="Networks & Hardware" data-ar="الشبكات والهاردوير">Networks & Hardware</b><span class="lvl" data-en="Expert · 6+ yrs" data-ar="خبير · +6 سنوات">Expert · 6+ yrs</span></div><div class="bar"><i data-w="95"></i></div></div>
+      <div class="bar-item reveal d1"><div class="row"><b>MERN / PERN</b><span class="lvl" data-en="Advanced" data-ar="متقدّم">Advanced</span></div><div class="bar"><i data-w="85"></i></div></div>
+      <div class="bar-item reveal d2"><div class="row"><b>PHP · HTML · CSS</b><span class="lvl" data-en="Advanced" data-ar="متقدّم">Advanced</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="bar-item reveal d3"><div class="row"><b>Java · JavaFX · Python</b><span class="lvl" data-en="Intermediate" data-ar="متوسّط">Intermediate</span></div><div class="bar"><i data-w="75"></i></div></div>
     </div>
     <div class="radar-wrap reveal" style="margin-top:46px">
       <canvas id="radarCanvas" width="420" height="340" aria-hidden="true"></canvas>
@@ -593,6 +615,12 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
     <span class="sec-tag reveal" data-en="Experience" data-ar="الخبرات">Experience</span>
     <h2 class="sec-title reveal" data-en-html='Where I have <span class="grad">worked</span>' data-ar-html='أين <span class="grad">عملت</span>'>Where I have <span class="grad">worked</span></h2>
     <div class="timeline">
+      <div class="t-item reveal">
+        <span class="t-date" data-en="2023 — Present" data-ar="2023 — حتى الآن">2023 — Present</span>
+        <h3 data-en="Independent Full-Stack Developer (Freelance)" data-ar="مطوّر ويب متكامل — عمل حر">Independent Full-Stack Developer (Freelance)</h3>
+        <h4 data-en="Safikoda — Remote, Gaza" data-ar="Safikoda — عن بُعد، غزة">Safikoda — Remote, Gaza</h4>
+        <p data-en="Design and ship production web apps end to end — ZidHub (PERN, real-time chat, search, payments), Qolha and TAYFORA. Own the database design, APIs, front-end, deployment and performance work." data-ar="تصميم وتنفيذ تطبيقات ويب إنتاجية من الفكرة حتى النشر — ZidHub (PERN مع محادثات وبحث فوري ومدفوعات)، قلها، وطيفورة. مسؤول عن تصميم قواعد البيانات وواجهات الـAPI والواجهة الأمامية والنشر والأداء.">Design and ship production web apps end to end — ZidHub (PERN, real-time chat, search, payments), Qolha and TAYFORA. Own the database design, APIs, front-end, deployment and performance work.</p>
+      </div>
       <div class="t-item reveal">
         <span class="t-date">Mar 2022 — Sep 2023</span>
         <h3 data-en="Computer / Network Technician" data-ar="فني حاسوب وشبكات">Computer / Network Technician</h3>
@@ -655,6 +683,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
         <div class="proj-body">
           <h3 data-en="ZidHub — Skill Exchange Platform" data-ar="ZidHub — منصة تبادل المهارات">ZidHub — Skill Exchange Platform</h3>
           <p data-en="A full skill-exchange web platform: real-time chat, search, payments and background jobs. Built for scale." data-ar="منصة ويب متكاملة لتبادل المهارات: محادثات فورية، بحث، مدفوعات ومهام خلفية. مبنية لتتحمل التوسع.">A full skill-exchange web platform: real-time chat, search, payments and background jobs. Built for scale.</p>
+          <p class="proj-meta" data-en="Solo full-stack build · real-time chat, search &amp; payments" data-ar="بناء كامل منفرد · محادثات وبحث ومدفوعات فورية">Solo full-stack build · real-time chat, search &amp; payments</p>
           <div class="chips"><span class="chip">PERN</span><span class="chip">Redis</span><span class="chip">Socket.IO</span><span class="chip">Meilisearch</span></div>
           <div class="proj-links">
             <a class="plink demo" href="https://zidhub.com" target="_blank" rel="noopener" data-en="Visit Site ↗" data-ar="↗ زيارة الموقع">Visit Site ↗</a>
@@ -667,6 +696,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
         <div class="proj-body">
           <h3 data-en="Qolha (قلها) — Web Platform" data-ar="قلها (Qolha) — منصة ويب">Qolha (قلها) — Web Platform</h3>
           <p data-en="A production PERN web application with authentication, moderation and a polished Arabic-first UI." data-ar="تطبيق ويب PERN يعمل في بيئة إنتاج مع تسجيل دخول وإشراف على المحتوى وواجهة عربية مصقولة.">A production PERN web application with authentication, moderation and a polished Arabic-first UI.</p>
+          <p class="proj-meta" data-en="Solo build · Arabic-first UX, auth &amp; content moderation" data-ar="بناء منفرد · تجربة عربية أولاً مع تسجيل دخول وإشراف على المحتوى">Solo build · Arabic-first UX, auth &amp; content moderation</p>
           <div class="chips"><span class="chip">PERN</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">Vite</span></div>
           <div class="proj-links">
             <a class="plink demo" href="qolha.html" data-en="Case Study ✦" data-ar="تفاصيل المشروع ✦">Case Study ✦</a>
@@ -678,6 +708,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
         <div class="proj-body">
           <h3 data-en="TAYFORA — Living Color Lab" data-ar="طيفورة (TAYFORA) — مختبر الألوان الحي">TAYFORA — Living Color Lab</h3>
           <p data-en="A modern, privacy-first color laboratory running 100% locally in-browser: image color extraction, WCAG contrast testing, and design token exports." data-ar="مختبر ألوان حي وعصري يعمل محلياً 100% داخل المتصفح: استخراج الألوان من الصور، اختبار التباين WCAG، وتصدير رموز التصميم.">A modern, privacy-first color laboratory running 100% locally in-browser: image color extraction, WCAG contrast testing, and design token exports.</p>
+          <p class="proj-meta" data-en="Solo build · 100% client-side, WCAG contrast tooling" data-ar="بناء منفرد · يعمل بالكامل داخل المتصفح مع أدوات تباين WCAG">Solo build · 100% client-side, WCAG contrast tooling</p>
           <div class="chips"><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Vite 7</span><span class="chip">Canvas API</span></div>
           <div class="proj-links">
             <a class="plink demo" href="https://tayfora.vercel.app" target="_blank" rel="noopener" data-en="Visit Site ↗" data-ar="↗ زيارة الموقع">Visit Site ↗</a>
@@ -690,6 +721,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
         <div class="proj-body">
           <h3 data-en="Safikoda — Portfolio" data-ar="Safikoda — البورتفوليو">Safikoda — Portfolio</h3>
           <p data-en="Hand-crafted single-file site: canvas particle engine, bilingual AR/EN with RTL, scroll animations — zero frameworks." data-ar="موقع مبني يدوياً بملف واحد: محرك جسيمات Canvas، ثنائي اللغة مع دعم RTL، وأنيميشن تمرير — بدون أي فريموورك.">Hand-crafted single-file site: canvas particle engine, bilingual AR/EN with RTL, scroll animations — zero frameworks.</p>
+          <p class="proj-meta" data-en="Design + code · single file, zero frameworks, AR/EN RTL" data-ar="تصميم وبرمجة · ملف واحد بدون فريموركس ودعم كامل للعربية">Design + code · single file, zero frameworks, AR/EN RTL</p>
           <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Vanilla JS</span><span class="chip">Canvas</span></div>
           <div class="proj-links"><a class="plink demo" href="#hero" data-en="You are here ✦" data-ar="أنت هنا ✦">You are here ✦</a></div>
         </div>
@@ -699,6 +731,7 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
         <div class="proj-body">
           <h3 data-en="Custom Projects — On Demand" data-ar="مشاريع حسب الطلب">Custom Projects — On Demand</h3>
           <p data-en="I build projects on request — web apps, dashboards and desktop tools. A few are in progress right now; yours could be next." data-ar="بنفّذ مشاريع حسب الطلب — تطبيقات ويب ولوحات تحكم وبرامج سطح مكتب. في مشاريع شغال عليها حالياً، ومشروعك ممكن يكون التالي.">I build projects on request — web apps, dashboards and desktop tools. A few are in progress right now; yours could be next.</p>
+          <p class="proj-meta" data-en="Scoped per request · web apps, dashboards &amp; desktop tools" data-ar="حسب نطاق كل طلب · تطبيقات ويب ولوحات تحكم وبرامج سطح مكتب">Scoped per request · web apps, dashboards &amp; desktop tools</p>
           <div class="chips"><span class="chip">Web Apps</span><span class="chip">Dashboards</span><span class="chip">Desktop</span></div>
           <div class="proj-links"><a class="plink demo" href="#contact" data-en="Request Yours ↗" data-ar="↗ اطلب مشروعك">Request Yours ↗</a></div>
         </div>
@@ -773,6 +806,32 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
   </div>
 </section>
 
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <span class="sec-tag reveal" data-en="Contact" data-ar="تواصل">Contact</span>
+    <h2 class="sec-title reveal" data-en-html='Let&apos;s work <span class="grad">together</span>' data-ar-html='لنعمل <span class="grad">معاً</span>'>Let's work <span class="grad">together</span></h2>
+    <p class="sec-sub reveal" data-en="Open to jobs, freelance projects and collaborations — reach out anytime." data-ar="متاح للوظائف والمشاريع الحرة والتعاون — تواصل معي في أي وقت.">Open to jobs, freelance projects and collaborations — reach out anytime.</p>
+    <div class="contact-wrap">
+      <form class="contact-form reveal" id="contactForm" aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-group"><label for="cfName" data-en="Name" data-ar="الاسم">Name</label><input id="cfName" class="form-input" type="text" name="name" autocomplete="name" required data-en-placeholder="Your name" data-ar-placeholder="اسمك" placeholder="Your name"></div>
+          <div class="form-group"><label for="cfEmail" data-en="Email" data-ar="البريد">Email</label><input id="cfEmail" class="form-input" type="email" name="email" autocomplete="email" inputmode="email" required data-en-placeholder="your@email.com" data-ar-placeholder="بريدك@email.com" placeholder="your@email.com"></div>
+        </div>
+        <div class="form-group"><label for="cfMsg" data-en="Message" data-ar="الرسالة">Message</label><textarea id="cfMsg" class="form-textarea" name="message" required data-en-placeholder="Tell me about your project..." data-ar-placeholder="اخبرني عن مشروعك..." placeholder="Tell me about your project..."></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="cfCompany">Company</label><input id="cfCompany" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+        <button type="submit" class="form-btn" data-en="Send Message ✦" data-ar="إرسال الرسالة ✦">Send Message ✦</button>
+        <div class="form-status" id="cfStatus" aria-live="polite"></div>
+      </form>
+      <div class="contact-cards reveal d1">
+        <div class="c-card"><div class="ic" aria-hidden="true">📧</div><h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3><a href="mailto:akram.safi.1500.as@gmail.com" style="direction:ltr;display:inline-block">akram.safi.1500.as@gmail.com</a></div>
+        <div class="c-card"><div class="ic" aria-hidden="true">📱</div><h3 data-en="Phone / WhatsApp" data-ar="هاتف / واتساب">Phone / WhatsApp</h3><a href="https://wa.me/970592832002" target="_blank" rel="noopener" style="direction:ltr;display:inline-block">+970 59 283 2002</a></div>
+        <div class="c-card"><div class="ic" aria-hidden="true">🔗</div><h3 data-en="Profiles" data-ar="حساباتي">Profiles</h3><span><a href="https://github.com/akram98safi" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/akram98safi" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://t.me/akram98safi" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.facebook.com/akram98safi" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/akram98safi" target="_blank" rel="noopener">Instagram</a> · <a href="https://x.com/akram98safi" target="_blank" rel="noopener">Twitter</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SUPPORT ================= -->
 <section id="support">
   <div class="wrap">
@@ -809,31 +868,6 @@ html[dir="rtl"] .marquee-track{animation:marqueeRtl 28s linear infinite}
           </div>
           <p class="sup-note" data-en="⚠ Always double-check the address and network before sending." data-ar="⚠ تأكد دائماً من العنوان والشبكة قبل الإرسال.">⚠ Always double-check the address and network before sending.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="wrap">
-    <span class="sec-tag reveal" data-en="Contact" data-ar="تواصل">Contact</span>
-    <h2 class="sec-title reveal" data-en-html='Let&apos;s work <span class="grad">together</span>' data-ar-html='لنعمل <span class="grad">معاً</span>'>Let's work <span class="grad">together</span></h2>
-    <p class="sec-sub reveal" data-en="Open to jobs, freelance projects and collaborations — reach out anytime." data-ar="متاح للوظائف والمشاريع الحرة والتعاون — تواصل معي في أي وقت.">Open to jobs, freelance projects and collaborations — reach out anytime.</p>
-    <div class="contact-wrap">
-      <form class="contact-form reveal" id="contactForm" aria-label="Contact form">
-        <div class="form-row">
-          <div class="form-group"><label for="cfName" data-en="Name" data-ar="الاسم">Name</label><input id="cfName" class="form-input" type="text" required data-en-placeholder="Your name" data-ar-placeholder="اسمك" placeholder="Your name"></div>
-          <div class="form-group"><label for="cfEmail" data-en="Email" data-ar="البريد">Email</label><input id="cfEmail" class="form-input" type="email" required data-en-placeholder="your@email.com" data-ar-placeholder="بريدك@email.com" placeholder="your@email.com"></div>
-        </div>
-        <div class="form-group"><label for="cfMsg" data-en="Message" data-ar="الرسالة">Message</label><textarea id="cfMsg" class="form-textarea" required data-en-placeholder="Tell me about your project..." data-ar-placeholder="اخبرني عن مشروعك..." placeholder="Tell me about your project..."></textarea></div>
-        <button type="submit" class="form-btn" data-en="Send Message ✦" data-ar="إرسال الرسالة ✦">Send Message ✦</button>
-        <div class="form-status" id="cfStatus" aria-live="polite"></div>
-      </form>
-      <div class="contact-cards reveal d1">
-        <div class="c-card"><div class="ic" aria-hidden="true">📧</div><h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3><a href="mailto:akram.safi.1500.as@gmail.com" style="direction:ltr;display:inline-block">akram.safi.1500.as@gmail.com</a></div>
-        <div class="c-card"><div class="ic" aria-hidden="true">📱</div><h3 data-en="Phone / WhatsApp" data-ar="هاتف / واتساب">Phone / WhatsApp</h3><a href="https://wa.me/970592832002" target="_blank" rel="noopener" style="direction:ltr;display:inline-block">+970 59 283 2002</a></div>
-        <div class="c-card"><div class="ic" aria-hidden="true">🔗</div><h3 data-en="Profiles" data-ar="حساباتي">Profiles</h3><span><a href="https://github.com/akram98safi" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/akram98safi" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://t.me/akram98safi" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.facebook.com/akram98safi" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/akram98safi" target="_blank" rel="noopener">Instagram</a> · <a href="https://x.com/akram98safi" target="_blank" rel="noopener">Twitter</a></span></div>
       </div>
     </div>
   </div>
@@ -1124,10 +1158,10 @@ document.querySelectorAll(".f-btn").forEach(function(btn){
 var nav=document.getElementById("nav");
 addEventListener("scroll",function(){nav.classList.toggle("scrolled",scrollY>30);},{passive:true});
 var burger=document.getElementById("burger"),menu=document.getElementById("mobileMenu");
-burger.addEventListener("click",function(){burger.classList.toggle("open");menu.classList.toggle("open");});
-menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){burger.classList.remove("open");menu.classList.remove("open");});});
+burger.addEventListener("click",function(){var isOpen=burger.classList.toggle("open");menu.classList.toggle("open",isOpen);burger.setAttribute("aria-expanded",isOpen?"true":"false");});
+menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){burger.classList.remove("open");menu.classList.remove("open");burger.setAttribute("aria-expanded","false");});});
 // Active section highlight
-var secIds=["about","skills","experience","projects","support","contact"];
+var secIds=["about","skills","experience","projects","contact","support"];
 var sio=new IntersectionObserver(function(entries){
   entries.forEach(function(en){
     if(en.isIntersecting){
@@ -1174,23 +1208,41 @@ document.getElementById("topBtn").addEventListener("click",function(){scrollTo({
 })();
 
 /* ---------- Contact form ---------- */
+/* Add a form endpoint (Formspree / Getform / Basin) to receive messages directly,
+   e.g. var FORM_ENDPOINT="https://formspree.io/f/xxxxxxxx";
+   While empty, the form falls back to opening the visitor's mail app. */
+var FORM_ENDPOINT="";
 var cf=document.getElementById("contactForm"),cfStatus=document.getElementById("cfStatus");
+function cfSay(t,c){if(cfStatus){cfStatus.textContent=t;cfStatus.className="form-status "+c;}}
 if(cf){
   cf.addEventListener("submit",function(e){
     e.preventDefault();
-    var name=document.getElementById("cfName").value.trim(),email=document.getElementById("cfEmail").value.trim(),msg=document.getElementById("cfMsg").value.trim();
-    if(!name||!email||!msg){cfStatus.textContent=(lang==="ar")?"يرجى ملء جميع الحقول.":"Please fill in all fields.";cfStatus.className="form-status err";return;}
-    var btn=cf.querySelector(".form-btn");btn.classList.add("sending");btn.textContent=(lang==="ar")?"جاري الإرسال...":"Sending...";
-    setTimeout(function(){
+    var ar=(document.documentElement.getAttribute("dir")==="rtl");
+    var name=document.getElementById("cfName").value.trim(),
+        email=document.getElementById("cfEmail").value.trim(),
+        msg=document.getElementById("cfMsg").value.trim(),
+        trap=document.getElementById("cfCompany");
+    if(trap&&trap.value){return;}
+    if(!name||!email||!msg){cfSay(ar?"يرجى ملء جميع الحقول.":"Please fill in all fields.","err");return;}
+    if(!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)){cfSay(ar?"يرجى إدخال بريد إلكتروني صحيح.":"Please enter a valid email address.","err");return;}
+    if(msg.length<10){cfSay(ar?"الرسالة قصيرة جداً — أضف تفاصيل أكثر.":"Message is too short — please add a little more detail.","err");return;}
+    var btn=cf.querySelector(".form-btn");
+    btn.classList.add("sending");btn.disabled=true;btn.textContent=ar?"جاري الإرسال...":"Sending...";
+    function done(){btn.classList.remove("sending");btn.disabled=false;btn.textContent=ar?"إرسال الرسالة ✦":"Send Message ✦";}
+    function mailFallback(){
       var subject="Message from "+name+" via portfolio";
       var body="Name: "+name+"%0D%0AEmail: "+email+"%0D%0A%0D%0AMessage:%0D%0A"+encodeURIComponent(msg);
       window.open("mailto:akram.safi.1500.as@gmail.com?subject="+encodeURIComponent(subject)+"&body="+body,"_blank");
-      cf.reset();cfStatus.textContent=(lang==="ar")?"تم فتح تطبيق البريد. شكراً!":"Mail app opened. Thank you!";cfStatus.className="form-status ok";
-      btn.classList.remove("sending");btn.textContent=(lang==="ar")?"إرسال الرسالة ✦":"Send Message ✦";
-    },900);
+      cf.reset();cfSay(ar?"تم فتح تطبيق البريد. شكراً!":"Mail app opened. Thank you!","ok");done();
+    }
+    if(!FORM_ENDPOINT){setTimeout(mailFallback,600);return;}
+    fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,email:email,message:msg,_subject:"Portfolio message from "+name})})
+      .then(function(res){if(!res.ok){throw new Error("bad status");}cf.reset();cfSay(ar?"تم إرسال رسالتك — سأرد عليك قريباً. شكراً!":"Message sent — I will get back to you soon. Thanks!","ok");done();})
+      .catch(function(){cfSay(ar?"تعذّر الإرسال — سيتم فتح تطبيق البريد بدلاً من ذلك.":"Could not send — opening your mail app instead.","err");setTimeout(mailFallback,900);});
   });
 }
 })();
 </script>
 </body>
 </html>
+
